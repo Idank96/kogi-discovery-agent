@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://discovery-agent.kogi-ai.com/sitemap.xml

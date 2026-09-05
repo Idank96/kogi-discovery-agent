@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kogi — Discovery AI Agent</title>
+
+    <!--
+      These lines can't be driven by src/content.ts — OG scrapers, search
+      crawlers and the browser tab read this file directly. Edit them
+      alongside content.ts. See CLAUDE.md.
+
+      SEO note: og:url, the canonical link, the JSON-LD url below, and
+      public/CNAME must all agree on the real domain:
+      discovery-agent.kogi-ai.com.
+    -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔍</text></svg>" />
+    <meta name="description" content="AI product discovery for the enterprise — Kogi interviews every employee, then turns the results into a ranked, costed roadmap of the AI products worth building." />
+    <link rel="canonical" href="https://discovery-agent.kogi-ai.com/" />
+    <meta property="og:title" content="Kogi — Discovery AI Agent" />
+    <meta property="og:description" content="AI product discovery for the enterprise" />
+    <meta property="og:url" content="https://discovery-agent.kogi-ai.com/" />
+    <meta name="twitter:card" content="summary" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Kogi",
+        "description": "AI product discovery for the enterprise — runs one-on-one discovery conversations with every employee, then turns the results into a ranked, costed roadmap of the AI products actually worth building.",
+        "applicationCategory": "BusinessApplication",
+        "url": "https://discovery-agent.kogi-ai.com/"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
