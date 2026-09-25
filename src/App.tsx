@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 import { content } from "./content";
-import { Benefits, ClosingCta, Footer, Hero, HowItWorks, Nav, Stats } from "./sections";
+import { Benefits, ClosingCta, Footer, Hero, HowItWorks, Nav, Showreel, Stats } from "./sections";
 import { Transcript } from "./components/Transcript";
 
 /**
@@ -36,6 +36,8 @@ export default function App() {
       <Nav content={content} />
       <div className="wrap">
         <Hero content={content} />
+        <hr className="rule2" />
+        <Showreel content={content} />
         <hr className="rule2" />
         <Stats content={content} />
         <hr className="rule2" />

@@ -1,3 +1,6 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
+
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
@@ -5,6 +8,18 @@ import App from "./App";
 import { content } from "./content";
 
 describe("App", () => {
+  it("embeds the showreel with its poster", () => {
+    render(<App />);
+    const video = screen.getByLabelText(content.showreel.label);
+    expect(video).toHaveAttribute("poster", content.showreel.poster);
+    expect(video.querySelector("source")).toHaveAttribute("src", content.showreel.src);
+  });
+
+  it("points the showreel at files that exist in public/", () => {
+    expect(existsSync(join("public", content.showreel.src))).toBe(true);
+    expect(existsSync(join("public", content.showreel.poster))).toBe(true);
+  });
+
   it("renders the headline", () => {
     render(<App />);
     const h1 = screen.getByRole("heading", { level: 1 });

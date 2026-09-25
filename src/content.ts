@@ -28,6 +28,13 @@ export interface NavLink {
   href: string;
 }
 
+export interface Showreel {
+  kicker: string;
+  src: string;
+  poster: string;
+  label: string;
+}
+
 export interface Content {
   product: string;
   emoji: string;
@@ -38,6 +45,7 @@ export interface Content {
   cta: string;
   email: string;
   nav: NavLink[];
+  showreel: Showreel;
   statsKicker: string;
   stats: [Stat, Stat, Stat, Stat];
   benefitsKicker: string;
@@ -67,6 +75,12 @@ export const content: Content = {
     { label: "How it works", href: "#how" },
     { label: "Contact", href: "#start" },
   ],
+  showreel: {
+    kicker: "Kogi in 30 seconds",
+    src: "./kogi-showreel.mp4",
+    poster: "./kogi-showreel-poster.jpg",
+    label: "Kogi in 30 seconds: from discovery conversations to a ranked AI roadmap",
+  },
   statsKicker: "What a discovery report looks like — illustrative figures",
   stats: [
     {

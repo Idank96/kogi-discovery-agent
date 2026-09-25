@@ -25,6 +25,10 @@ a:hover { color: var(--color-accent); text-decoration: underline; }
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
 @media (prefers-reduced-motion: reduce) { .chat-header .dot { animation: none; } }
 
+/* — showreel — */
+.showreel { padding: calc(2.5 * var(--leading)) 0; }
+.showreel__video { display: block; width: 100%; aspect-ratio: 16 / 9; background: var(--color-neutral-900); }
+
 /* — stats — */
 .stats { padding: calc(2.5 * var(--leading)) 0; }
 .stats .grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: calc(1.5 * var(--leading)) var(--leading); }

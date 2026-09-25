@@ -61,6 +61,28 @@ export function Hero({ content }: { content: Content }) {
   );
 }
 
+export function Showreel({ content }: { content: Content }) {
+  const { kicker, src, poster, label } = content.showreel;
+  return (
+    <section className="showreel" aria-labelledby="showreel-heading">
+      <span id="showreel-heading" className="kicker">
+        {kicker}
+      </span>
+      <video
+        className="showreel__video"
+        controls
+        preload="metadata"
+        playsInline
+        poster={poster}
+        aria-label={label}
+      >
+        <source src={src} type="video/mp4" />
+        <a href={src}>Watch the video</a>
+      </video>
+    </section>
+  );
+}
+
 export function Stats({ content }: { content: Content }) {
   return (
     <section className="stats" aria-label="Sample discovery insights">
