@@ -73,6 +73,7 @@ export const content: Content = {
   nav: [
     { label: "Product", href: "#product" },
     { label: "How it works", href: "#how" },
+    { label: "Guide", href: "/guides/ai-use-case-discovery/" },
     { label: "Contact", href: "#start" },
   ],
   showreel: {
