@@ -1,0 +1,14 @@
+# Kogi
+
+> Kogi is an AI agent that runs one-on-one AI use case discovery conversations with every employee in a company, then turns the answers into a ranked, costed roadmap of the AI products worth building.
+
+Kogi works inside Slack or Teams. It asks employees about their recent work, follows up on specifics (how often, who else, what a good result looks like), clusters duplicate requests into buildable product ideas, and ranks each idea by demand, hours saved and build cost.
+
+## Pages
+
+- [Home](https://discovery-agent.kogi-ai.com/): what Kogi is, how it works, and a sample discovery conversation
+- [How to run an AI use case discovery across your company](https://discovery-agent.kogi-ai.com/guides/ai-use-case-discovery/): a practical five-step guide to finding, clustering and ranking AI use cases
+
+## Contact
+
+- Email: idan.kog@gmail.com

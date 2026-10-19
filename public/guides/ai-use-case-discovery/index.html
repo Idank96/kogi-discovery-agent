@@ -32,6 +32,54 @@
         "publisher": { "@type": "Organization", "name": "Kogi", "url": "https://kogi-ai.com/" }
       }
     </script>
+    <script type="application/ld+json">
+      {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+            {
+                  "@type": "Question",
+                  "name": "What is an AI use case discovery?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A structured effort to find where AI would remove real work in a company. The output is a ranked list of specific, buildable tools, each with an estimate of demand, time saved and cost, not just a list of ideas."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "How long does an AI use case discovery take?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "With a handful of teams, a few weeks of interviews and clustering. Done by hand it scales poorly, because interviewing and grouping answers become the bottleneck as headcount grows. An AI interviewer such as Kogi can run all the conversations in parallel."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "Why interview employees instead of sending a survey?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Surveys produce vague answers such as better search or less admin. Interviews let you follow up on how often a task happens, who else does it and what a good result looks like, and that detail is what makes an idea buildable."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "How do you rank AI use cases?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Cluster duplicate requests first, then score each cluster on how many people want it, the hours it would save and a rough build cost. Demand and value are separate: the most requested idea is not always the most valuable."
+                  }
+            },
+            {
+                  "@type": "Question",
+                  "name": "What is the difference between a theme and a use case?",
+                  "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A theme is broad, such as use AI for reporting. A use case names a task, an owner, an input and a success condition, such as building the weekly executive deck from source data and flagging numbers that look wrong."
+                  }
+            }
+      ]
+}
+    </script>
     <style>
       :root { --bg: #fff; --fg: #1a1a2e; --muted: #5b5b72; --accent: #4f46e5; --rule: #e4e4ee; }
       @media (prefers-color-scheme: dark) {
@@ -42,6 +90,7 @@
       a { color: var(--accent); }
       nav { font-size: 15px; margin-bottom: 2.5rem; }
       h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 .75rem; }
+      h3 { font-size: 1.1rem; margin: 1.5rem 0 .25rem; }
       h2 { font-size: 1.4rem; margin: 2.5rem 0 .5rem; }
       .lede { color: var(--muted); font-size: 1.15rem; }
       ol, ul { padding-left: 1.25rem; }
@@ -89,6 +138,18 @@
 
         <h2>Doing it at scale</h2>
         <p>The method above works with ten people. With a thousand, the interviews and the clustering become the bottleneck. This is the problem <a href="/">Kogi</a> is built for: an AI agent that holds the one-on-one conversations inside Slack or Teams, asks the follow-up questions, and groups the results into a ranked, costed roadmap.</p>
+
+        <h2>Frequently asked questions</h2>
+        <h3>What is an AI use case discovery?</h3>
+        <p>A structured effort to find where AI would remove real work in a company. The output is a ranked list of specific, buildable tools, each with an estimate of demand, time saved and cost, not just a list of ideas.</p>
+        <h3>How long does an AI use case discovery take?</h3>
+        <p>With a handful of teams, a few weeks of interviews and clustering. Done by hand it scales poorly, because interviewing and grouping answers become the bottleneck as headcount grows. An AI interviewer such as Kogi can run all the conversations in parallel.</p>
+        <h3>Why interview employees instead of sending a survey?</h3>
+        <p>Surveys produce vague answers such as better search or less admin. Interviews let you follow up on how often a task happens, who else does it and what a good result looks like, and that detail is what makes an idea buildable.</p>
+        <h3>How do you rank AI use cases?</h3>
+        <p>Cluster duplicate requests first, then score each cluster on how many people want it, the hours it would save and a rough build cost. Demand and value are separate: the most requested idea is not always the most valuable.</p>
+        <h3>What is the difference between a theme and a use case?</h3>
+        <p>A theme is broad, such as use AI for reporting. A use case names a task, an owner, an input and a success condition, such as building the weekly executive deck from source data and flagging numbers that look wrong.</p>
 
         <div class="cta">
           <p><strong>Want to see it on your company?</strong> <a href="mailto:idan.kog@gmail.com?subject=Kogi%20discovery">Get in touch</a> or see <a href="/">how Kogi works</a>.</p>
