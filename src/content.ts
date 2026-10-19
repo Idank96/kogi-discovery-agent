@@ -67,7 +67,7 @@ export const content: Content = {
   headline: "Your employees know which AI tool they need.",
   headlineLines: ["Your employees know", "which AI tool they need."],
   subhead:
-    "Kogi is an AI agent your whole company talks to. It runs one-on-one discovery conversations with every employee, then turns the results into a ranked, costed roadmap of the AI products actually worth building.",
+    "Kogi is an AI agent your whole company talks to. It runs one-on-one AI use case discovery conversations with every employee, then turns the results into a ranked, costed AI roadmap of the products actually worth building.",
   cta: "Contact sales",
   email: "idan.kog@gmail.com",
   nav: [
